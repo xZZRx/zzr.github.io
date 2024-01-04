@@ -1,0 +1,124 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'poppins',sans-serif;
+}
+body{
+	overflow: hidden;
+}
+.container{
+	width: 100%;
+	min-height: 100vh;
+	background-color: #f3f5f8;
+}
+nav{
+	display: flex;
+	width: 95%;
+	justify-content: space-around;
+	height: 80px;
+	line-height: 80px;
+	z-index: 111;
+	
+}
+.logo{
+	display: flex;
+	font-size: 40px;
+	font-weight: 800;
+	color: #3d535f;
+	letter-spacing: 3px;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+b{
+	font-size: 70px;
+	color: #7f00ff;
+}
+.navItems{
+	display: flex;
+}
+.navItems li{
+	list-style: none;
+	margin: 0 15px;
+}
+.navItems li a{
+	font-size: 25px;
+	color: #3d535f;
+	letter-spacing: 3px;
+	text-decoration: none;
+	text-transform: capitalize;
+}
+.navItems li:hover a,
+.links a:hover{
+	color: #7f00ff;
+}
+.links a{
+	font-size: 30px;
+	color: #3d535f;
+	margin: 25px 10px;
+}
+.img{
+	padding-top: 100px;
+	text-align: center;
+}
+.img img {
+  	width: 45%;
+  	height: 45%;
+  	animation: img-side-to-side 2s ease-in-out infinite; 
+}
+@keyframes img-side-to-side {
+	0% { transform: scale(1); }
+ 	50% { transform: scale(1.1); }
+  	100% { transform: scale(1); }
+}
+.typing-text {
+	display: flex;
+	font-size: 40px;
+	font-weight: 800;
+	color: black;
+	margin-top: 5%;
+	justify-content: center;
+	font-size: 30px;
+  	font-weight: bold;
+   	opacity: 0;
+ 	animation: word-highlight 1s ease-in-out 0.5s forwards;
+}
+
+@keyframes word-highlight {
+	from { opacity: 0; }
+ 	to { opacity: 1; }
+}
+.wobbling-square1 {
+	position: absolute;
+	left: -12%;
+	top: 10%; 
+	transform: translate(-50%, -50%);
+ 	height: 600px;
+	width: 600px;
+	background: linear-gradient(-45deg,#7f00ff,pink);
+  	margin: 50px auto;
+ 	animation: move-up-down 2s ease-in-out infinite; 
+}
+
+@keyframes move-up-down {
+	0% { transform: translateY(0px); } 
+  	50% { transform: translateY(-5px); }
+  	100% { transform: translateY(0px); } 
+}
+.wobbling-square2 {
+	position: absolute;
+	right: 10%;
+	top: 10%; 
+  	transform: translate(-50%, -50%);
+ 	height: 200px;
+	width: 200px;
+  	background: linear-gradient(45deg,#7f00ff,pink);
+  	margin: 50px auto;
+ 	animation: lmove-up-down 3s ease-in-out infinite; 
+}
+
+@keyframes lmove-up-down {
+  	0% { transform: translateY(0px); }
+  	50% { transform: translateY(-5px); }
+  	100% { transform: translateY(0px); }
+}
